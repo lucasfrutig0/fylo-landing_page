@@ -1,0 +1,38 @@
+.header {
+  height: 60px;
+  width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem auto;
+
+  @include for-phone-only {
+    margin: 3rem auto;
+  }
+
+  .header__logo img {
+    @include for-phone-only {
+      width: 80%;
+    }
+  }
+
+  .header__nav {
+    color: $desaturated-blue;
+
+    .header__nav__main-menu {
+      margin-bottom: 20px;
+    }
+
+    .header__nav__main-menu__item {
+      display: inline-block;
+      margin-left: 1.5rem;
+      cursor: pointer;
+
+      @include for-phone-only {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

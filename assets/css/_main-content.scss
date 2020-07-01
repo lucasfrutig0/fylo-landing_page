@@ -1,0 +1,48 @@
+main {
+  flex: 1;
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    @include for-phone-only {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+
+  .hero__call-to-action {
+    padding: 2rem;
+
+    @include for-phone-only {
+      order: 2;
+    }
+  }
+
+  .hero__call-to-action__title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero__call-to-action__disclaimer {
+    margin-bottom: 20px;
+  }
+
+  .hero__call-to-action__form {
+    @include for-phone-only {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+  }
+}

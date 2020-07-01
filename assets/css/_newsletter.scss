@@ -1,0 +1,57 @@
+.newsletter {
+  background: $desaturated-blue;
+  padding: 8.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.8rem;
+  }
+
+  p {
+    color: white;
+  }
+
+  @include for-phone-only {
+   flex-direction: column;
+   padding: 4rem;
+  }
+
+}
+
+.newsletter__info {
+  max-width: 450px;
+
+  @include for-phone-only {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .hero__call-to-action__form__button {
+      margin-top: 5px;
+    }
+  }
+
+}
+
+
+
+.newsletter__form {
+
+  input {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  @include for-phone-only {
+    order: 2;
+    text-align: center;
+
+    input {
+      width: 100%;
+      margin-bottom: .2rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.hero__call-to-action__form__button {
+  text-transform: capitalize;
+  background-color: $bright-blue;
+  color: white;
+  font-weight: 700;
+  padding: 1rem 4.5rem;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 2px 0px $very-dark-blue;
+
+  @include for-tablet-landscape-up {
+    padding: 1rem 3.5rem;
+  }
+
+  @include for-phone-only {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
